@@ -4,7 +4,7 @@ import face_recognition
 
 video_capture = cv2.VideoCapture(0)
 
-# Initialize variables
+# face lokasyon listesi
 face_locations = []
 
 while True:
