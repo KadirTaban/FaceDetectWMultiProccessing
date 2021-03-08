@@ -15,12 +15,12 @@ while True:
     face_locations = face_recognition.face_locations(rgb_frame)
 
     for top, right, bottom, left in face_locations:
-        # Draw a box around the face
+        # algılanan yüzün etrafına çerçeve çiz
         cv2.rectangle(frame, (left, top), (right, bottom), (0, 0, 255), 2)
 
     cv2.imshow('Video', frame)
 
-    # Hit 'q' on the keyboard to quit!
+    # Çıkmak için q ya basın
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
