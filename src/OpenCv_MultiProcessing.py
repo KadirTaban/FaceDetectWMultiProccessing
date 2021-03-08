@@ -19,12 +19,10 @@ def cam1():
         # tanımlanan yüzleri yukarda boş bıraktığımız liste lokasyonunun içine attı
         face_locations = face_recognition.face_locations(rgb_frame)
 
-        # Display the results
         for top, right, bottom, left in face_locations:
             # Draw a box around the face
             cv2.rectangle(frame, (left, top), (right, bottom), (0, 0, 255), 2)
 
-        # Display the resulting image
         cv2.imshow('Video', frame)
 
         # Hit 'q' on the keyboard to quit!
