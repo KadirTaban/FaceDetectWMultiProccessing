@@ -8,6 +8,8 @@ video_capture = cv2.VideoCapture(0)
 face_locations = []
 
 while True:
+
+
     ret, frame = video_capture.read()
 
     rgb_frame = frame[:, :, ::-1]
